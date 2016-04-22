@@ -18,9 +18,29 @@
     "test": "mocha"
   },
   "devDependencies": {
-    "mocha": "*",
-    "should": "*"
+    "assemble": "^0.10.0",
+    "capture-stream": "^0.1.2",
+    "mocha": "*"
   },
   "keywords": [
-  ]
+    "assemble",
+    "assemble-core",
+    "built",
+    "built-in",
+    "core",
+    "default",
+    "each",
+    "handlebars",
+    "helpers",
+    "in",
+    "log",
+    "lookup",
+    "templates",
+    "unless"
+  ],
+  "dependencies": {
+    "create-frame": "^0.1.2",
+    "export-files": "^2.1.1",
+    "get-value": "^2.0.5"
+  }
 }
