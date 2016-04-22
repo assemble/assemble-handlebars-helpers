@@ -1,0 +1,26 @@
+{
+  "name": "assemble-handlebars-helpers",
+  "description": "Default helpers for use in assemble to replace the built-in Handlebars helpers.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/assemble/assemble-handlebars-helpers",
+  "author": "Brian Woodward (https://github.com/doowb)",
+  "repository": "assemble/assemble-handlebars-helpers",
+  "bugs": "https://github.com/assemble/assemble-handlebars-helpers/issues",
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  },
+  "keywords": [
+  ]
+}
