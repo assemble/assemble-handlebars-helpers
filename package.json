@@ -8,7 +8,8 @@
   "bugs": "https://github.com/assemble/assemble-handlebars-helpers/issues",
   "license": "MIT",
   "files": [
-    "index.js"
+    "index.js",
+    "lib/"
   ],
   "main": "index.js",
   "engines": {
