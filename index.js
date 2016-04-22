@@ -7,6 +7,5 @@
 
 'use strict';
 
-module.exports = function() {
-};
+module.exports = require('./lib/helpers');
 
