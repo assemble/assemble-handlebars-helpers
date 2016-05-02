@@ -28,6 +28,18 @@ describe('assemble-handlebars-helpers', function() {
         cb();
       });
     });
+
+    it('should render using {{if}} helper inside {{each}} helper without context loss', function(cb) {
+      app.page('a.hbs', { content: '{{#each items}}{{#if foo}}{{foo}}{{/if}}{{/each}}' });
+      var context = {
+        items: [{foo: 'a'}, {foo: false}, {foo: 'c'}]
+      };
+      app.render('a.hbs', context, function(err, results) {
+        if (err) return cb(err);
+        assert.equal(results.content, 'ac');
+        cb();
+      });
+    });
   });
 
   describe('if', function() {
