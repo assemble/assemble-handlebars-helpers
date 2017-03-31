@@ -11,7 +11,7 @@
   "license": "MIT",
   "files": [
     "index.js",
-    "lib/"
+    "lib"
   ],
   "main": "index.js",
   "engines": {
@@ -19,6 +19,11 @@
   },
   "scripts": {
     "test": "mocha"
+  },
+  "dependencies": {
+    "create-frame": "^1.0.0",
+    "export-files": "^2.1.1",
+    "get-value": "^2.0.6"
   },
   "devDependencies": {
     "assemble": "^0.23.0",
@@ -42,11 +47,6 @@
     "templates",
     "unless"
   ],
-  "dependencies": {
-    "create-frame": "^1.0.0",
-    "export-files": "^2.1.1",
-    "get-value": "^2.0.6"
-  },
   "verb": {
     "plugins": [
       "gulp-format-md"
