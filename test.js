@@ -86,6 +86,20 @@ describe('assemble-handlebars-helpers', function() {
         cb();
       });
     });
+
+    it('should render dynamic partials using {{lookup}} helper', function(cb) {
+      app.page('b.hbs', { content: '{{> (lookup data "partial") partialData }}'});
+      app.partial('partial.hbs', { content: '{{answer}}'});
+      var context = {
+        data: { partial: 'partial' },
+        partialData: { answer: '42' }
+      };
+      app.render('b.hbs', context, function(err, results) {
+        if (err) return cb(err);
+        assert.equal(results.content, '42');
+        cb();
+      });
+    });
   });
 
   describe('unless', function() {
