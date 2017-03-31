@@ -1,5 +1,6 @@
 'use strict';
 
+require('mocha');
 var capture = require('capture-stream');
 var assemble = require('assemble');
 var assert = require('assert');

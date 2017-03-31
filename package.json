@@ -21,10 +21,10 @@
     "test": "mocha"
   },
   "devDependencies": {
-    "assemble": "^0.11.0",
+    "assemble": "^0.23.0",
     "capture-stream": "^0.1.2",
-    "gulp-format-md": "^0.1.9",
-    "mocha": "^2.4.5"
+    "gulp-format-md": "^0.1.11",
+    "mocha": "^3.2.0"
   },
   "keywords": [
     "assemble",
@@ -43,9 +43,9 @@
     "unless"
   ],
   "dependencies": {
-    "create-frame": "^0.1.2",
+    "create-frame": "^1.0.0",
     "export-files": "^2.1.1",
-    "get-value": "^2.0.5"
+    "get-value": "^2.0.6"
   },
   "verb": {
     "plugins": [
