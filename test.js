@@ -14,7 +14,7 @@ describe('assemble-handlebars-helpers', function() {
   });
 
   it('should register helpers', function() {
-    assert.deepEqual(Object.keys(app._.helpers.sync), ['each', 'if', 'log', 'lookup', 'unless', 'with']);
+    assert.deepEqual(Object.keys(app._.helpers.sync), ['partials', 'layouts', 'pages', 'each', 'if', 'log', 'lookup', 'unless', 'with']);
   });
 
   describe('each', function() {
